@@ -13,3 +13,10 @@ document.addEventListener("DOMContentLoaded", function (event){
 form.addEventListener("submit", function (event){
   event.preventDefault()
   console.log("your from was Submitted")
+  const billInput = document.getElementById("bill-amount").value
+  
+  const tip = billInput * 0.2;
+  const tipNode = document.getElementById("tips")
+  const tipNodeText = tipNode.textContent
+  tipNode.innerText = tipNodeText + tip
+})
