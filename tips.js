@@ -8,3 +8,8 @@ document.addEventListener("DOMContentLoaded", function (event){
   function getAmount(){
     
   }
+
+  const form = document.getElementById("form")
+form.addEventListener("submit", function (event){
+  event.preventDefault()
+  console.log("your from was Submitted")
